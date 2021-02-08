@@ -1,4 +1,4 @@
-function coverter(logdata_line) {
+function converter(logdata_line) {
   let result = "";
   for (const line of logdata_line) {
     let result_line = format;
@@ -87,7 +87,7 @@ file_selector.addEventListener(
         let logdata = reader.result;
         console.log(logdata);
         const logdata_line = logdata.split("\n");
-        let result = coverter(logdata_line);
+        let result = converter(logdata_line);
         const blob = new Blob([result], { type: "text/plain" });
         const a = document.createElement("a");
         a.download = "ltsv2apache_" + reader.name;
