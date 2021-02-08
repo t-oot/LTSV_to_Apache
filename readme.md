@@ -15,7 +15,8 @@
 |body_bytes_sent|%b|
 |referer|%{Referer}i|
 |useragent|%{User-Agent}i|
-If you want to change the correspondence, you need to edit the `coverter function` in `app.js`
+
+** If you want to change the correspondence, you need to edit the `coverter function` in `app.js`
 
  ## Usage
 1. Open `converter.html` in browser
